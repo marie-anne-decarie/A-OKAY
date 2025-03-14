@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body{
@@ -11,45 +11,48 @@ body{
     font-weight: 400;
     font-style: normal;
     background-color: #f2f2f2;
-    color: #1c1c1c;
+    color: #117651;
     z-index: 0;
+    width: 100vw;
 }
 
 header{
     height: 100vh;
-    background: url(../images/gridPattern.png) no-repeat fixed center center;
+    width: 100vw;
+    /* background: url(../images/gridPattern.png) no-repeat fixed center center; */
 
 }
 
 header h3{
     text-align: center;
     font-weight: 400;
-    letter-spacing: 1em;
+    letter-spacing: 1.5em;
     padding: 0;
-    margin: 0;
-    position: relative;
-    top: -20px;
+    margin: 1rem 0 0 0;
+    /* position: relative;
+    top: -20px; */
 }
 
 header h1{
     text-align: center;
     font-size: 15em;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0;
     position: relative;
-    top: -120px;
+    /* top: -120px; */
     left: -30px;
     font-style: italic;
+    line-height: 0.8em;
     /* letter-spacing: 2; */
 }
 
 header h4{
-    margin: 0;
+    margin: 2rem 0 0 0;
     text-align: center;
-    position: relative;
-    font-weight: 400;
-    top: -170px;
+    /* position: relative;
+    top: -170px; */
     letter-spacing: .3em;
+    font-weight: 400;
 }
 
 
@@ -59,11 +62,17 @@ header h4{
 
     list-style: none;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hoverzone h2{
+    padding: 0 2rem 0 2rem;
+    text-transform: uppercase;
 }
 
 .hoverzone li{
-    float: left;
+    /* float: left; */
     width: 10em;
     text-align: center;
 
@@ -74,13 +83,16 @@ header h4{
     font-size: 3em;
     font-weight: 400;
     font-style: normal;
+    /* margin-bottom: 0; */
 }
 
 .hoverzone li ul{
     position: absolute;
     width: 15em;
-    left: auto;
+    /* left: auto; */
+    right: 0px;
     opacity: 0;
+    /* background-color: red; */
 }
 
 .hoverzone li ul li{
@@ -90,9 +102,14 @@ header h4{
     padding: 1.5em 0;
 }
 
+
+/* .hoverzone li:hover{
+    right: 0px;
+} */
+
 .hoverzone li:hover ul{
     /* left: 50em;*/
-    right: 0px;
+    /* right: 0px; */
     opacity: 0.8;
 
 }
@@ -101,7 +118,7 @@ header h4{
 .menu{
     background-color: #f2f2f2;
     padding: 1em 0;
-    height: 100vh;
+    height: auto;
     opacity: 0.8;
     z-index: 10;
 }
@@ -114,7 +131,7 @@ header h4{
 .funfact{
     text-align: center;
     color: #f2f2f2;
-    background-color: #1c1c1c;
+    background-color: #117651;
     padding: .3em 0;
     opacity: 0.8;
 }
@@ -126,6 +143,6 @@ header h4{
     align-items: center;
     font-size: 5em;
     padding: 1rem;
-    line-height: 5.5rem;
+    line-height: 5.5rem; 
 
 }
