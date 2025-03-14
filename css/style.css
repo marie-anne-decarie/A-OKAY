@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f2f2f2;
+    color: #1c1c1c;
+    z-index: 0;
+}
+
+header{
+    height: 100vh;
+    background: url(../images/gridPattern.png) no-repeat fixed center center;
+
+}
+
+header h3{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1em;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -20px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 15em;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    top: -120px;
+    left: -30px;
+    font-style: italic;
+    /* letter-spacing: 2; */
+}
+
+header h4{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    top: -170px;
+    letter-spacing: .3em;
+}
+
+
+.hoverzone{
+    padding:0;
+    margin:0;
+
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.hoverzone li{
+    float: left;
+    width: 10em;
+    text-align: center;
+
+}
+
+.hoverzone li h2{
+    font-family: "Libre Barcode 128 Text", system-ui;
+    font-size: 3em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hoverzone li ul{
+    position: absolute;
+    width: 15em;
+    left: auto;
+    opacity: 0;
+}
+
+.hoverzone li ul li{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1.5em 0;
+}
+
+.hoverzone li:hover ul{
+    /* left: 50em;*/
+    right: 0px;
+    opacity: 0.8;
+
+}
+
+
+.menu{
+    background-color: #f2f2f2;
+    padding: 1em 0;
+    height: 100vh;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 1em;
+}
+
+.funfact{
+    text-align: center;
+    color: #f2f2f2;
+    background-color: #1c1c1c;
+    padding: .3em 0;
+    opacity: 0.8;
+}
+
+.title-sect{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 5em;
+    padding: 1rem;
+    line-height: 5.5rem;
+
+}
