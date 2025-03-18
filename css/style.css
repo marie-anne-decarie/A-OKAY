@@ -170,6 +170,7 @@ header h4{
 .menu{
     background-color: white;
     padding: 1em;
+    margin:0;
     height: auto;
     opacity: 0.9;
     z-index: 10;
