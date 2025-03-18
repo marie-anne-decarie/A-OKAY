@@ -74,9 +74,23 @@ header h4{
 }
 
 .logo{
+    padding: 0 2rem;
+    text-transform: uppercase;
     animation: logoAnim 3s forwards infinite;
     position: relative;
 
+}
+
+.small-header{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.small-header h1{
+    font-size: 3em;
+    left: 0px;
 }
 
 @keyframes logoAnim{
@@ -97,7 +111,7 @@ header h4{
 }
 
 .hoverzone h2{
-    padding: 0 2rem 0 2rem;
+    /* padding: 0 2rem 0 2rem; */
     text-transform: uppercase;
 }
 
