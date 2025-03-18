@@ -368,8 +368,6 @@ a:active{
 
 .img-link:hover{filter:saturate(200%);}
 
-.img-link:active{}
-
 .arrow::after{
     content:"→"
 }
