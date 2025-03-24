@@ -24,6 +24,8 @@ body{
 }
 
 header{
+    /* the bg image is temporary, I will make a better scalable version so that it looks better aligned */
+    background: url(../images/gridPattern.png) repeat-x fixed center center;
     height: 100vh;
     padding: 1em;
 
@@ -41,6 +43,7 @@ header{
     text-transform: uppercase;
     animation: logoAnim 3s forwards infinite;
     position: relative;
+    font-size: 1.5em;
 }
 
 @keyframes logoAnim{
@@ -86,8 +89,18 @@ header{
 }
 
 h1{
-    font-size: calc(96px + 0.390625vw);
+    font-size: 4em;
     margin: 0;
+    padding:.2em;
+    line-height: .8em;
+    
+}
+
+h2{
+    font-size: calc(76px + 0.390625vw);
+    line-height: .8em;
+    text-align: left;
+    padding: 1rem;
 }
 
 h3, h4{
@@ -113,12 +126,12 @@ img{
 
 a:link{
     text-decoration: none;
-    color:#117651;
+    color:#02150e;
     transition: all .2s;
 }
 
 a:visited{
-    color:#117651;
+    color:#02150e;
 }
 
 a:hover{
@@ -135,6 +148,7 @@ a:active{
     display:flex;
     align-items: center;
     overflow: hidden;
+    height: auto;
 
     }
 
@@ -162,6 +176,105 @@ a:active{
 @keyframes funfacts{
     from{transform: translateX(0%);}
     to{transform: translateX(-50%);}
+}
+
+.right-to-left{
+    animation: funfacts2 10s infinite linear;
+}
+
+@keyframes funfacts2{
+    from{transform: translateX(-50%);}
+    to{transform: translateX(0%);}
+}
+
+p{
+    /* padding: 1em; */
+}
+
+.title-sect h3{
+    padding: 1em;
+}
+
+.ten-years-article{
+    text-align: center;
+    padding: 1em;
+}
+
+.ambassadors{
+    text-align: center;
+    padding: 1em;
+}
+
+.ambassadors h3{
+    font-weight: bold;
+}
+
+.img-link:link{
+    transition: all 1s;
+}
+
+.img-link:visited{
+    transition: all 1s;
+}
+
+.img-link:hover{filter:saturate(200%);}
+
+.img-link:active{
+    filter:saturate(200%);
+}
+
+.arrow::after{
+    content:"→"
+}
+
+footer{
+    background-color: #117651;
+    color:white;
+    padding: 1em;
+    margin-top: 2rem;
+    font-size: .8em;
+}
+
+.foot-lists ul{
+    list-style: none;
+    padding: 0;
+}
+
+.foot-lists{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.foot-lists a:link{
+    color: #fafafa;
+}
+
+.foot-lists a:visited{
+    color: #fafafa;
+}
+
+.foot-lists a:hover{
+    color:#21c186;
+}
+
+.foot-lists a:active{
+    color:#02150e;
+}
+
+.statera{
+    font-weight: bold;
+    animation: idle 2s forwards infinite;
+    position: relative;
+    text-align: center;
+    /* transition: all cubic-bezier(.21,.23,.41,1.06); */
+}
+
+@keyframes idle{
+    0%{top:0px;}
+    50%{top: 10px;}
+    100%{top: 0px;}
 }
 
 
