@@ -205,9 +205,6 @@ a:active{
     to{transform: translateX(0%);}
 }
 
-p{
-    /* padding: 1em; */
-}
 
 .title-sect h3{
     padding: 1em;
