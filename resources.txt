@@ -1,2 +1,5 @@
 https://dev.to/tetragius/pure-css-matrix-code-effect-5b6k
 How to do a matrix-style text effect pure css
+
+https://www.i2symbol.com/symbols/arrows
+arrow symbols to copy and paste
