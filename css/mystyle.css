@@ -13,7 +13,7 @@ html{
 
 body{
     margin: 0;
-    font-size: calc(20px + 0.390625vw);
+    font-size: calc(16px + 0.390625vw);
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -22,6 +22,11 @@ body{
     z-index: 0;
     width: 100vw;
 
+}
+
+.admin{
+    background-color: #02150e;
+    color: white;
 }
 
 header{
@@ -60,10 +65,12 @@ header{
 }
 
 .hoverzone h2{
-    font-family: "Libre Barcode 128 Text", system-ui;
+    /* font-family: "Libre Barcode 128 Text", system-ui;
     font-size: 3rem;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; */
+    font-size: 1.5em;
+    text-transform: uppercase;
     position: relative;
     margin: 0;
 }
@@ -142,7 +149,7 @@ header h4{
     display: flex;
     justify-content: space-between;
     height: auto;
-    align-items: center;
+    align-items: start;
 }
 
 .small-header h1{
@@ -179,7 +186,7 @@ a:active{
     display:flex;
     align-items: center;
     overflow: hidden;
-    height: 1.2em;
+    height: 1.5em;
     font-size: .8em;
     
 
@@ -221,6 +228,10 @@ a:active{
 }
 
 
+.title-sect{
+    margin-top: 2em;
+}
+
 .title-sect h2{
     padding: 1rem;
     padding-left: 2rem;
@@ -228,6 +239,7 @@ a:active{
 
 .title-sect h3{
     padding-left: 2rem;
+    letter-spacing: normal;
 }
 
 .ten-years-article{
@@ -240,7 +252,7 @@ a:active{
     opacity: 0;
     position: relative;
     bottom: -100px;
-    transition: all .8s cubic-bezier(.7,.07,.62,1.2);
+    transition: all .3s cubic-bezier(.7,.07,.67,1.56);
 }
 
 .fade-in.is-visible{
@@ -282,6 +294,37 @@ a:active{
 
 .arrow::after{
     content:"→"
+}
+
+.ambassadors-sect{
+    text-align: center;
+    padding: 0;
+}
+
+.two-pics{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.two-pics img{
+    margin-top:2.5rem;
+}
+
+.ambassadors-sect article{
+    padding: 1em;
+}
+
+.ambassadors-sect h3{
+    font-weight: bold;
+}
+
+.fun-article{
+    padding: 2em;
+}
+
+.fun-article h3{
+    font-weight: bold;
+    text-align: center;
 }
 
 footer{
@@ -458,6 +501,36 @@ footer{
      }
         
     .img-link:hover{filter:saturate(200%);}
+
+    .ambassadors-sect{
+        display: flex;
+        padding: 2em;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    .ambassadors-sect div{
+        width: 30vw;
+    }
+    
+    .two-pics{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    .two-pics img{
+        margin-top:0;
+        margin-bottom: 0.3em;
+        max-width: 700px;
+    
+    }
+
+    .ambassadors-sect article{
+        width: 70vw;
+    }
 
 
 
