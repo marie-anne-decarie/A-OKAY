@@ -65,11 +65,11 @@ header{
 }
 
 .hoverzone h2{
-    /* font-family: "Libre Barcode 128 Text", system-ui;
+    font-family: "Libre Barcode 128 Text", system-ui;
     font-size: 3rem;
     font-weight: 400;
-    font-style: normal; */
-    font-size: 1.5em;
+    font-style: normal;
+    /* font-size: 1.5em; */
     text-transform: uppercase;
     position: relative;
     margin: 0;
@@ -327,6 +327,28 @@ a:active{
     text-align: center;
 }
 
+
+
+.trivia{
+    display: block;
+    background-color: #117651;
+    color:#f2f2f2;
+    padding: .5em;
+
+}
+
+.trivia ul{
+    text-align: left;
+    font-weight: bold;
+}
+
+.trivia li{
+    list-style-type: "✧ ";
+    font-weight: normal;
+}
+
+
+
 footer{
     background-color: #117651;
     color:white;
@@ -531,6 +553,23 @@ footer{
     .ambassadors-sect article{
         width: 70vw;
     }
+
+    .trivia-parent{
+        height: auto;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+
+    }
+    
+    .trivia{
+        background-color: #117651;
+        display: flex;
+        justify-content: center;
+        /* align-items: end; */
+    }
+
+   
 
 
 
