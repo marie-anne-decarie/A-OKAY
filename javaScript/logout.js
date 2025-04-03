@@ -10,10 +10,12 @@ yes.addEventListener('click', goHome);
 
 function openBox() {
   box.style.height = "80vh";
+  box.style.border = "1px solid #f2f2f2";
 }
 
 function closeBox() {
   box.style.height = "0%";
+  box.style.border = "none";
 }
 
 function goHome() {
