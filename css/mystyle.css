@@ -55,6 +55,7 @@ header{
     /* animation: logoAnim 3s forwards infinite; */
     position: relative;
     font-size: 1.5em;
+    color:#117651;
 }
 
 @keyframes logoAnim{
@@ -243,6 +244,33 @@ a:active{
     color:#21c186;
 }
 
+
+#logout{
+    cursor: pointer;
+}
+
+.myBox{
+    background-color: orangered;
+    color:#f2f2f2;
+    position: fixed;
+    top: 50%;
+    width: 100vw;
+    height: 0;
+    text-align: center;
+    overflow: hidden;
+    transition:all 0.5s;
+    z-index: 12;
+}
+
+#closebox{
+    cursor: pointer;
+    z-index: 99;
+}
+
+#goback{
+    cursor: pointer;
+    z-index: 99;
+}
 
 
 .funfact{
