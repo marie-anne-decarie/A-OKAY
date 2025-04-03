@@ -72,21 +72,20 @@ header{
 	z-index: 9;
 	color:#117651;
 	font-weight:bold;
-	mix-blend-mode: multiply;
+	/* mix-blend-mode: multiply; */
     font-family: "Libre Barcode 128 Text", system-ui;
     font-size: 3rem;
     font-weight: 400;
     font-style: normal;
+    transition: all 0.5s;
 }
 
 #open:visited{
     color:#117651;
 }
 #open:hover {
-	color: #02150e;
+	color: #21c186;
 }
-
-
 
 .overlay {
     /* height: 100vh;
@@ -109,7 +108,6 @@ header{
     flex-direction: column;
     align-items: center;
     margin-top: 4em;
-    /* margin-left: 1em; */
 }
 
 .closebtn {
@@ -134,34 +132,16 @@ header{
 }
 
 .closebtn:hover {
-	color: #02150e;
+	color: #21c186;
 }
 
-.hoverzone{
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
+.darkmode{
+    color:#117651;
+    mix-blend-mode: normal;
 }
 
-.hoverzone h2{
-    font-family: "Libre Barcode 128 Text", system-ui;
-    font-size: 3rem;
-    font-weight: 400;
-    font-style: normal;
-    /* font-size: 1.5em; */
-    text-transform: uppercase;
-    position: relative;
-    margin: 0;
-}
-
-.menu{
-    position: absolute;
-    right: 0px;
-    z-index: 10;
-
-    /* making it temporarily invisible until I figure out how to make it work on touch/hover */
-    opacity: 0;
-    
+.overlay.darkmode{
+    background-color: #02150e;
 }
 
 .a-okay{
@@ -225,16 +205,16 @@ header h4{
 }
 
 .small-header{
+    background: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     height: auto;
     align-items: start;
 }
 
-.small-header h1{
-    /* position: absolute;
-    opacity: 0; */
-    display: none;
+.small-header h2{
+    padding: 0;
+    padding-bottom: 0.5em;
 }
 
 img{
@@ -256,6 +236,10 @@ a:hover{
 }
 
 a:active{
+    color:#21c186;
+}
+
+.overlay-content a:hover{
     color:#21c186;
 }
 
@@ -389,14 +373,6 @@ a.img-link:active{
     font-size: .8em;
 }
 
-.two-pics{
-    display: flex;
-    overflow-x: hidden;
-}
-
-.two-pics img{
-    margin-top:2.5rem;
-}
 
 .ambassadors-sect article{
     padding: 2em;
@@ -631,27 +607,27 @@ footer{
 
     .reverse{
         flex-direction: row-reverse;
+        background-color: #f2f2f2;
     }
 
     .ambassadors-sect div{
         width: 30vw;
     }
     
-    .two-pics{
-        display: flex;
-        flex-direction: column;
+    .ambassadors-sect img{
+        max-width:30vw;
+        /* max-height: 100%; */
         padding: 1em;
     }
-    
-    .two-pics img{
-        margin-top:0;
-        margin-bottom: 0.3em;
-        max-width: 700px;
-    
-    }
+
 
     .ambassadors-sect article{
         width: 70vw;
+        text-align: left;
+    }
+
+    .ambassadors-sect.reverse article{
+        text-align: right;
     }
 
     .trivia-parent{
@@ -659,6 +635,7 @@ footer{
         display: flex;
         align-items: end;
         justify-content: center;
+
 
     }
     

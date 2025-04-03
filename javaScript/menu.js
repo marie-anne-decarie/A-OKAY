@@ -2,6 +2,7 @@ const hamb = document.querySelector('#open');
 const closer = document.querySelector('#close');
 const menu = document.querySelector('#myNav');
 
+
 hamb.addEventListener('click', openNav);
 closer.addEventListener('click', closeNav);
 
