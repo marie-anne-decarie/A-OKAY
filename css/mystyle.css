@@ -491,6 +491,7 @@ a.img-link:active{
 
 .pictures{
     margin-left: 2em;
+    margin-bottom: 4em;
 }
 
 .pictures img{
@@ -745,9 +746,39 @@ footer{
         margin: 1em;
     }
 
-   
+   .pictures{
+    display: flex;
+    margin-bottom: 3em;
+   }
 
+   .single-pic{
+    max-width: 60vw;
+    margin-right: 2em;
+   }
 
+   .pictures img{
+    max-width: 60vw;
+    height: auto;
+    /* object-fit: cover;
+    overflow: hidden; */
+   }
+
+   .pictures-container{
+    max-width: 20vw;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+   }
+
+   .pictures-container img{
+    max-width: 15vw;
+   }
+
+   .pictures-container figcaption{
+    padding-bottom: 1em;
+    max-width: 15vw;
+    font-size: .8em;
+   }
 
 
 }
