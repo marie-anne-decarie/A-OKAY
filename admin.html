@@ -10,19 +10,21 @@
 
     <header class="small-header">
     
-        <h2 class="logo">a-okay</h2>
+        <h2 class="logo" id="logoAdmin">a-okay</h2>
         
     <!-- menu html start -->
 	<nav id="myNav" class="overlay darkmode">
 		<span class="closebtn" id="close">close x</span>
 		<div class="overlay-content">
-        <span id="logout" class="darkmode">Log out</span>
+            <a href="admin.html" class="darkmode">Home</a>
+            <a href="updates.html" class="darkmode">Updates</a> 
+            <span id="logout" class="darkmode">Log out</span>
 		</div>
 	</nav>
 
     <section id="myBox" class="myBox">
         <section class="mybox-content">
-            <h2>Are you sure?</h2>
+            <h2>Are you sure you want to log out?</h2>
             
             <span id="goback">Yes</span>
             <span id="closebox">No</span>  
@@ -39,8 +41,8 @@
        <nav class="funfact">
         <div class="scroll">
             <div class="left-to-right">
-                <p>:D hourly fun fact - A-OKAY has won Statera's Cool Peeps Award for sickest marketing campaign twice!</p>
-                <p>:D hourly fun fact - A-OKAY has won Statera's Cool Peeps Award for sickest marketing campaign twice!</p>
+                <p>Site maintenance alert: site maintenance is scheduled for Monday, 15:30.</p>
+                <p>Site maintenance alert: site maintenance is scheduled for Monday, 15:30.</p>
             </div>
         </div>
         
@@ -52,12 +54,64 @@
 </section>
 
     <section class="title-sect">
-        <h2>Project A-OKAY has successfully been launched.</h2>
+        <h2>Project A-OKAY has success-fully been launched.</h2>
         <h3>Log in regularly for updates</h3>
     </section>
 
+    <section class="title-sect small-p">
+        <h3>Recent updates</h3>
+        <p>04.20 - Subject still missing. Phase 2 is successful nonetheless. The replica is surpassing expectations. Search 
+            for subject continues.
+        </p>        
+        <p>04.07 - Nothing has been heard from subject in the past week. Radio silence. The replica has no choice but to stay 
+            active. Search for subject is relentless. Worry has been arising in 
+            online circles. We cannot deal with public outrage at the moment.
+        </p>        
+        <p>03.31 - Subject is no where to be found. Intense research is in progress. Phase 2 might be suspended.</p>
+
+        <p>03.31 - Phase 2 has successfully been launched. Update will follow quickly.</p>
+
+        <h3 class="green-arrow"><a href="updates.html" class="darkmode">Read more</a></h3>
+
+    </section>
+
+    <section class="ambassadors-sect " >
+        <div class="two-pics">
+            <img src="images/marsWeb3.png" alt="Mars" class="dark-pic disappear">
+            <img src="images/clone.png" alt="Replica" class="on-top">
+        </div>
+        <article>
+            <h3>Subject</h3>
+            <ul>
+                <li>Full name: Marceline "Mars" Zepp</li>
+                <li>Age: 26</li>
+                <li>Status: Single</li>
+            </ul>        
+            <p>Marceline Zepp has been a loyal representant of the A-OKAY brand name from its independant origins
+            to its recent acquisition by Statera Co. However, her behaviors in the past few years have been contradictory 
+            to what A-OKAY stands for. She has been chosen by Statera higher ups to be the first subject in the research 
+            experiment known as A-OKAY project, a never-seen-before AI experiment with the goal of replacing certain of a 
+            popular figure's private and public interactions with those of a clone, or replica. The research was started in 
+            January of 2047 and the project was officially deployed three years later on January 1st, 2050.
+            </p>
+        </article>
+
+    </section>
+
+
+
+    <footer>
+        <section class="foot-lists">
+
+
+        </section>
+        <p class="statera">Powered by STATERA CO.</p>
+    </footer>
+
     <script src="javaScript/menu.js"></script>
     <script src="javaScript/logout.js"></script>
+    <script src="javaScript/logo.js"></script>   
+    
     
 </body>
 </html>

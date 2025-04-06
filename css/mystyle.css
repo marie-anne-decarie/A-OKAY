@@ -56,6 +56,7 @@ header{
     position: relative;
     font-size: 1.5em;
     color:#117651;
+    cursor: pointer;
 }
 
 @keyframes logoAnim{
@@ -237,11 +238,13 @@ a:visited{
     color:#02150e;
 }
 
+a.darkmode:visited{
+    color:#117651;
+}
+
 a:hover{
     color: #02150e;
 }
-
-
 
 a:active{
     color:#21c186;
@@ -258,6 +261,10 @@ a.darkmode:hover{
 
 #logout{
     cursor: pointer;
+    /* font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold; */
+
 }
 
 .myBox{
@@ -359,6 +366,10 @@ a.darkmode:hover{
 }
 
 
+ul{
+    list-style: square;
+}
+
 .title-sect{
     margin: 3em 0;
 }
@@ -437,7 +448,12 @@ a.img-link:active{
 }
 
 .arrow::after{
-    content:"→"
+    content:"→";
+}
+
+.green-arrow::after{
+    content:"→";
+    color:#117651;
 }
 
 .ambassadors-sect{
@@ -469,6 +485,10 @@ a.img-link:active{
     text-align: center;
 }
 
+.fun-article p{
+    padding: .5em 1em;
+}
+
 
 
 .trivia{
@@ -492,10 +512,6 @@ a.img-link:active{
 .pictures{
     margin-left: 2em;
     margin-bottom: 4em;
-}
-
-.pictures img{
-
 }
 
 .pictures-container{
@@ -524,6 +540,37 @@ a.img-link:active{
     max-width: 25vw;
     /* position: relative;
     top: -50px; */
+}
+
+form{
+    /* margin:2em; */
+    padding: 0 2rem;
+}
+
+input{
+    background-color: #02150e;
+    color:#21c186;
+    border: none;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+form button{
+    background-color: #117651;
+    border: 1px solid #f2f2f2;
+    color:#f2f2f2;
+    margin-left: 1em;
+}
+
+.small-p p{
+    font-size: .8em;
+    padding: 1rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.dark-pic{
+    filter: brightness(50%);
 }
 
 
@@ -616,6 +663,10 @@ footer{
     }
     
     a:visited{
+        color:#117651;
+    }
+
+    a.darkmode:visited{
         color:#117651;
     }
     
@@ -779,6 +830,44 @@ footer{
     max-width: 15vw;
     font-size: .8em;
    }
+
+   form{
+    padding: 0 4em;
+   }
+
+   #logout{
+    font-size: 2.5rem;
+    padding: 1rem;
+    font-weight: bold;
+
+}
+
+.two-pics{
+    position: relative;
+}
+
+img.on-top{
+    position: absolute;
+    top: 0x;
+    left: 0px;
+    z-index:-1;
+}
+
+img.disappear{
+    opacity: 1;
+    transition: all 5s;
+}
+
+img.disappear:hover{
+    opacity:0;
+}
+
+/* .squished{
+    margin-bottom: -400px;
+} */
+
+
+
 
 
 }
