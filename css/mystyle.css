@@ -22,6 +22,7 @@ body{
     color: #117651;
     z-index: 0;
     width: 100vw;
+    word-wrap: break-word;
 
 }
 
@@ -470,6 +471,8 @@ a.img-link:active{
 
 .ambassadors-sect h3{
     font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: normal;
 }
 
 .reverse{
@@ -571,6 +574,30 @@ form button{
 
 .dark-pic{
     filter: brightness(50%);
+}
+
+.on-top{
+    display: none;
+}
+
+.pull-quote{
+    
+    /* margin-bottom: 2em; */
+    padding: 1em 0;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    background-color: #117651;
+    color:#f2f2f2;
+}
+
+.pull-quote p::before{
+    content:"❝";
+    display: inline;
+}
+
+.pull-quote p::after{
+    content:"❞";
 }
 
 
@@ -771,6 +798,7 @@ footer{
     .ambassadors-sect article{
         width: 70vw;
         text-align: left;
+        padding-top:.5em;
     }
 
     .ambassadors-sect.reverse article{
@@ -781,9 +809,13 @@ footer{
         height: auto;
         display: flex;
         align-items: end;
-        justify-content: center;
+        justify-content: start;
 
 
+    }
+
+    .reverse .trivia-parent{
+        justify-content: end;
     }
     
     .trivia{
@@ -847,6 +879,7 @@ footer{
 }
 
 img.on-top{
+    display: initial;
     position: absolute;
     top: 0x;
     left: 0px;
@@ -862,10 +895,25 @@ img.disappear:hover{
     opacity:0;
 }
 
-/* .squished{
-    margin-bottom: -400px;
-} */
+.pics-row{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
 
+.pics-row img{
+    max-width: 30vw;
+}
+
+.pics-row img.big-pic{
+    max-width: 80vw;
+}
+
+.pull-quote p{
+    font-size: 2rem;
+    padding: 0 .5em;
+    margin: 1em;
+}
 
 
 
