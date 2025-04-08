@@ -194,6 +194,10 @@ span.darkmode:hover{
 
 }
 
+#time{
+    display: none;
+}
+
 .a-okay div{
     text-align: center;
 }
@@ -981,6 +985,15 @@ img.disappear:hover{
     margin: 1em;
 }
 
+#time{
+    display: initial;
+    position: absolute;
+    top: 20px;
+    left:20px;
+    font-size: 1.5em;
+    padding: 0;
+    line-height: 1.5rem;
+}
 
 
 
