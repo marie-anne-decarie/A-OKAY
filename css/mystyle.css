@@ -31,8 +31,13 @@ body{
     color: white;
 }
 
-.admin .small-header{
+.admin .small-header, .project .small-header{
     background: none;
+}
+
+.project{
+    color:#3977EB;
+    background-color: #020819;
 }
 
 header{
@@ -58,6 +63,10 @@ header{
     font-size: 1.5em;
     color:#117651;
     cursor: pointer;
+}
+
+.project .logo{
+    color:#3977EB;
 }
 
 @keyframes logoAnim{
@@ -88,6 +97,14 @@ header{
 }
 #open:hover {
 	color: #21c186;
+}
+
+.project #open{
+    color:#3977EB;
+}
+
+.project #open:hover{
+    color: #8ab0f5;
 }
 
 .overlay {
@@ -134,8 +151,16 @@ header{
     font-style: normal;
 }
 
+.project .closebtn{
+    color:#3977EB;
+}
+
 .closebtn:hover {
 	color: #21c186;
+}
+
+.project .closebtn:hover{
+    color:#8ab0f5;
 }
 
 .darkmode{
@@ -150,6 +175,10 @@ span.darkmode:hover{
 
 .overlay.darkmode{
     background-color: #02150e;
+}
+
+.overlay.project{
+    background-color: #020819;
 }
 
 .a-okay{
@@ -173,7 +202,7 @@ h1{
 }
 
 h2{
-    font-size: calc(76px + 0.390625vw);
+    font-size: 4rem;
     line-height: .9em;
     text-align: left;
     padding: 1rem;
@@ -231,12 +260,12 @@ img{
 
 a:link{
     text-decoration: none;
-    color:#02150e;
+    color:#117651;
     transition: all .2s;
 }
 
 a:visited{
-    color:#02150e;
+    color:#117651;
 }
 
 a.darkmode:visited{
@@ -244,7 +273,7 @@ a.darkmode:visited{
 }
 
 a:hover{
-    color: #02150e;
+    color: #21c186;
 }
 
 a:active{
@@ -257,6 +286,18 @@ a.darkmode:hover{
 
 .overlay-content a:hover{
     color:#21c186;
+}
+
+.project a:link{
+    color:#3977EB;
+}
+
+.project a:visited{
+    color:#3977EB;
+}
+
+.project a:hover{
+    color:#8ab0f5;
 }
 
 
@@ -331,6 +372,10 @@ a.darkmode:hover{
 
     }
 
+.project .funfact{
+    background-color: #3977EB;
+}
+
 .scroll{
     white-space: nowrap;
     margin: 0 1em;
@@ -346,6 +391,10 @@ a.darkmode:hover{
     width: auto;
     letter-spacing: .2rem;
     margin: 1rem;
+}
+
+.project .scroll p{
+    color:#020819;
 }
 
 .left-to-right{
@@ -486,6 +535,8 @@ a.img-link:active{
 .fun-article h3{
     font-weight: bold;
     text-align: center;
+    font-size: 1.5em;
+    letter-spacing: normal;
 }
 
 .fun-article p{
@@ -610,6 +661,11 @@ footer{
     font-size: .8em;
 }
 
+.project footer{
+    background-color: #3977EB;
+    color:#020819;
+}
+
 .foot-lists ul{
     list-style: none;
     /* padding: 0; */
@@ -636,6 +692,10 @@ footer{
 
 .foot-lists a:active{
     color:#02150e;
+}
+
+.project .foot-lists a:hover{
+    color:#020819;
 }
 
 .statera{
@@ -698,7 +758,7 @@ footer{
     }
     
     a:hover{
-        color: #02150e;
+        color: #21c186;
     }
 
     a.darkmode:hover{
