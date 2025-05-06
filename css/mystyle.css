@@ -243,8 +243,8 @@ header h4{
     position: relative;
 }
 
-p{
-    padding: 0 2em;
+p.special-p{
+    padding: 0 4em;
 }
 
 @keyframes idle-h4{
