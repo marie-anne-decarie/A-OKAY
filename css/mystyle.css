@@ -243,6 +243,10 @@ header h4{
     position: relative;
 }
 
+p{
+    padding: 0 2em;
+}
+
 @keyframes idle-h4{
     0%{bottom: 0px;}
     10%{bottom: -30px;}
@@ -737,7 +741,8 @@ footer{
     }
 
     header h1{
-        font-size: 10em;
+        font-size: 15em;
+        /* font-style: italic; */
     }
 
     h2{
